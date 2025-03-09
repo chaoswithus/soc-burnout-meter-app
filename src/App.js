@@ -9,7 +9,7 @@ function App() {
 
   // ✅ Fetch questions from backend
   useEffect(() => {
-    fetch("http://localhost:5000/api/questions")
+    fetch("https://soc-burnout-meter-agjtxqmnt-sanjanas-projects-fbe3ead8.vercel.app/api/questions")
       .then((res) => res.json())
       .then((data) => setQuestions(data))
       .catch((err) => console.error("Error fetching questions:", err));
